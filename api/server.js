@@ -1,7 +1,7 @@
 let express = require('express');
 let app = express();
 let movieController = require('./controllers/movie.controller');
-
+let errorHelper = require('./helpers/errorHelper');
 let cors = require('cors');
 
 let router = express.Router();
@@ -166,6 +166,12 @@ router.patch('/movies/:id', (req, res, next) => {
 })
 
 app.use('/api/', router);
+// exception logger to console
+app.use(errorHelper.logErrorsToConsole);
+// client error handler
+app.use(errorHelper.clientErrorHandler);
+// catch-all exception middleware
+app.use(errorHelper.errorHandler);
 
 app.listen(3012, () => {
     console.log('Server is running at: http://localhost:3012');

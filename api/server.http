@@ -1,0 +1,49 @@
+GET http://localhost:3012/api/movies
+
+###
+
+GET http://localhost:3012/api/movies/search/?id=3&title=A
+
+###
+
+GET http://localhost:3012/api/movies/1
+
+###
+
+POST http://localhost:3012/api/movies
+Content-Type: application/json
+
+{
+      "id": 8,
+      "title": "blabla",
+      "released": "2014",
+      "duration": "2h 49min",
+      "imdb": "8.9"
+}
+
+###
+
+PUT http://localhost:3012/api/movies/7
+Content-Type: application/json
+
+{
+      "id": 7,
+      "title": "Interstellar",
+      "released": "2014",
+      "duration": "2h 49min",
+      "imdb": "7.6"
+}
+
+###
+
+DELETE http://localhost:3012/api/movies/8
+Content-Type: application/json
+
+###
+
+PATCH http://localhost:3012/api/movies/1
+Content-Type: application/json
+
+{
+      "title": "The Hangover"
+}
