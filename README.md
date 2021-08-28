@@ -32,12 +32,12 @@ Server.js använder express, movie.router.js, errorHelper.js. errorHelper hjälp
 
 ## Alla Endpoints:
 
-- GET http://localhost:3011/api/movies (G-krav)
-- GET http://localhost:3011/api/movies/:id (VG-krav)
-- POST http://localhost:3011/api/movies (G-krav)
-- PUT http://localhost:3011/api/movies/:id (G-krav)
-- DELETE http://localhost:3011/api/movies/:id (G-krav)
-- PATCH http://localhost:3011/api/movies/:id (Extra funktionalitet/endpoint)
+- GET http://localhost:3012/api/movies (G-krav)
+- GET http://localhost:3012/api/movies/:id (VG-krav)
+- POST http://localhost:3012/api/movies (G-krav)
+- PUT http://localhost:3012/api/movies/:id (G-krav)
+- DELETE http://localhost:3012/api/movies/:id (G-krav)
+- PATCH http://localhost:3012/api/movies/:id (Extra funktionalitet/endpoint)
 
 ## Funktionskrav
 
