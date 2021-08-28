@@ -2,10 +2,6 @@ GET http://localhost:3012/api/movies
 
 ###
 
-GET http://localhost:3012/api/movies/search/?id=3&title=A
-
-###
-
 GET http://localhost:3012/api/movies/1
 
 ###
@@ -14,29 +10,29 @@ POST http://localhost:3012/api/movies
 Content-Type: application/json
 
 {
-      "id": 8,
+      "id": 9,
       "title": "blabla",
-      "released": "2014",
-      "duration": "2h 49min",
-      "imdb": "8.9"
+      "released": "2000",
+      "duration": "1h",
+      "imdb": "7"
 }
 
 ###
 
-PUT http://localhost:3012/api/movies/7
+PUT http://localhost:3012/api/movies/8
 Content-Type: application/json
 
 {
-      "id": 7,
-      "title": "Interstellar",
-      "released": "2014",
-      "duration": "2h 49min",
-      "imdb": "7.6"
+      "id": 8,
+      "title": "blablablaa",
+      "released": "2000",
+      "duration": "1h",
+      "imdb": "7"
 }
 
 ###
 
-DELETE http://localhost:3012/api/movies/8
+DELETE http://localhost:3012/api/movies/9
 Content-Type: application/json
 
 ###

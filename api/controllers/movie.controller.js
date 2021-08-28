@@ -22,28 +22,6 @@ let movieController = {
             }
         })
     },
-    search: (searchObject, resolve, reject) => {
-        fs.readFile(FILE_NAME, (err, data) => {
-            if (err) {
-                reject(err);
-            } else {
-                let movies = JSON.parse(data);
-
-                if (searchObject) {
-                    // Example search
-                    // let searchObject = {
-                    //  "id": 1,
-                    //  "title": 'A'
-                    // };
-                    movies = movies.filter(
-                        m => (searchObject.id ? m.id == searchObject.id : true) &&
-                            (searchObject.title ? m.title.toLowerCase().indexOf(searchObject.title.toLowerCase()) >= 0 : true));
-                }
-
-                resolve(movies);
-            }
-        });
-    },
     insert: (newData, resolve, reject) => {
         fs.readFile(FILE_NAME, (err, data) => {
             if (err) {
